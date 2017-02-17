@@ -8,12 +8,13 @@
 
 import UIKit
 import SpriteKit
+import GoogleMobileAds
 import GameKit
 import AVFoundation
 
 class GameViewController: UIViewController, GKGameCenterControllerDelegate{
     
-    //var googleBannerView : GADBannerView!
+    var googleBannerView : GADBannerView!
     var leaderboardIdentifier: String? = nil
     var gameCenterEnabled: Bool = false
     
@@ -35,7 +36,7 @@ class GameViewController: UIViewController, GKGameCenterControllerDelegate{
             skView.presentScene(scene, transition: transition)
         }
         
-        //loadBanner()
+        loadBanner()
 
     }
     
@@ -44,10 +45,10 @@ class GameViewController: UIViewController, GKGameCenterControllerDelegate{
         authenticateLocalPlayer()
     }
     
-    /*
+    
     func loadBanner() {
         googleBannerView = GADBannerView(adSize: kGADAdSizeSmartBannerPortrait)
-        googleBannerView.adUnitID = "ca-app-pub-7649281918688809/7940530179"
+        googleBannerView.adUnitID = "ca-app-pub-7649281918688809/3727391375"
         googleBannerView.rootViewController = self
         
         let request:GADRequest = GADRequest()
@@ -60,7 +61,7 @@ class GameViewController: UIViewController, GKGameCenterControllerDelegate{
         
         bannerHeight = googleBannerView.frame.size.height
     }
-    */
+    
     func authenticateLocalPlayer() {
         let localPlayer = GKLocalPlayer.localPlayer()
         localPlayer.authenticateHandler = {(viewController : UIViewController?, error : Error?) -> Void in

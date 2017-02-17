@@ -13,7 +13,7 @@ class ShopScene: SKScene, ChartboostDelegate {
     
     //Currency and shopping
     var currency = CurrencyManager()
-    let productID: NSSet = NSSet(objects:"com.KJBApps.CircleOfChance.doublecoins")
+    let productID: NSSet = NSSet(objects:"com.KJBApps.CircleOfChance2.doublecoins")
     var store: IAPHelper?
     var list = [SKProduct]()
     var doubleCoinsBool = Bool()
@@ -287,8 +287,8 @@ class ShopScene: SKScene, ChartboostDelegate {
             
             if doubleCoins.contains(touchLocation){
                 for product in list {
-                    if product.productIdentifier == "com.KJBApps.CircleOfChance.doublecoins" {
-                        if let isTrue = store?.isProductPurchased("com.KJBApps.CircleOfChance.doublecoins") {
+                    if product.productIdentifier == "com.KJBApps.CircleOfChance2.doublecoins" {
+                        if let isTrue = store?.isProductPurchased("com.KJBApps.CircleOfChance2.doublecoins") {
                             if isTrue == false {
                                 store?.buyProduct(product)
                             }
@@ -389,7 +389,7 @@ class ShopScene: SKScene, ChartboostDelegate {
     func handlePurchaseNotification(_ notification: Notification) {
         guard let productID = notification.object as? String else { return }
         
-        if productID == "com.KJBApps.CircleOfChance.doublecoins" {
+        if productID == "com.KJBApps.CircleOfChance2.doublecoins" {
             doubleCoins.alpha = 0.5
             doubleCoinsBool = true
         }

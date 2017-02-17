@@ -45,6 +45,7 @@
 		0431E7881E573CB80064846A /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0431E7871E573CB80064846A /* GameKit.framework */; };
 		0431E78A1E573CD00064846A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0431E7891E573CD00064846A /* Foundation.framework */; };
 		0431E78C1E573CD80064846A /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0431E78B1E573CD80064846A /* AVFoundation.framework */; };
+		0431E78E1E5747190064846A /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0431E78D1E5747190064846A /* GoogleMobileAds.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -89,6 +90,7 @@
 		0431E7871E573CB80064846A /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
 		0431E7891E573CD00064846A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		0431E78B1E573CD80064846A /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		0431E78D1E5747190064846A /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMobileAds.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0431E78E1E5747190064846A /* GoogleMobileAds.framework in Frameworks */,
 				0431E78C1E573CD80064846A /* AVFoundation.framework in Frameworks */,
 				0431E78A1E573CD00064846A /* Foundation.framework in Frameworks */,
 				0431E7881E573CB80064846A /* GameKit.framework in Frameworks */,
@@ -113,6 +116,7 @@
 		0431E7131E56E5540064846A = {
 			isa = PBXGroup;
 			children = (
+				0431E78D1E5747190064846A /* GoogleMobileAds.framework */,
 				0431E7811E5737130064846A /* Chartboost.framework */,
 				0431E71E1E56E5540064846A /* Circle Of Chance 2 */,
 				0431E71D1E56E5540064846A /* Products */,
