@@ -18,6 +18,13 @@ class item: NSObject, NSCoding{
     static let UnlockedArchiveURL = DocumentsDirectory.appendingPathComponent("unlockedItem")
     static let CurrentArchiveURL = DocumentsDirectory.appendingPathComponent("currentSkin")
     
+    struct PropertyKeys {
+        static var nameKey = "name"
+        static var spriteKey = "sprite"
+        static var itemTypeKey = "itemType"
+        static var priceKey = "price"
+    }
+    
     fileprivate var _itemtype: itemType
     
     var itemtype: itemType {
@@ -73,18 +80,18 @@ class item: NSObject, NSCoding{
     }
     
     required convenience init?(coder aDecoder: NSCoder) {
-        let price = aDecoder.decodeObject(forKey: "price") as! Int
-        let sprite = aDecoder.decodeObject(forKey: "sprite") as! SKSpriteNode
-        let name = aDecoder.decodeObject(forKey: "name") as! String
-        let itemtype = aDecoder.decodeInteger(forKey: "item")
+        let price = aDecoder.decodeObject(forKey: PropertyKeys.priceKey) as? Int ?? 0
+        let sprite = aDecoder.decodeObject(forKey: PropertyKeys.spriteKey) as! SKSpriteNode
+        let name = aDecoder.decodeObject(forKey: PropertyKeys.nameKey) as! String
+        let itemtype = aDecoder.decodeInteger(forKey: PropertyKeys.itemTypeKey)
         self.init(item: itemType.init(rawValue: itemtype)!, sprite: sprite, name: name, price: price)
         
     }
     
     func encode(with aCoder: NSCoder) {
-        aCoder.encode(_name, forKey: "name")
-        aCoder.encode(_price, forKey: "price")
-        aCoder.encode(_sprite, forKey: "sprite")
-        aCoder.encode(_itemtype.rawValue, forKey: "item")
+        aCoder.encode(_name, forKey: PropertyKeys.nameKey)
+        aCoder.encode(_price, forKey: PropertyKeys.priceKey)
+        aCoder.encode(_sprite, forKey: PropertyKeys.spriteKey)
+        aCoder.encode(_itemtype.rawValue, forKey: PropertyKeys.itemTypeKey)
     }
 }
