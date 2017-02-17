@@ -17,12 +17,10 @@
 		0431E7481E5731DF0064846A /* GrandHotel-Regular.otf in Resources */ = {isa = PBXBuildFile; fileRef = 0431E7421E5731DF0064846A /* GrandHotel-Regular.otf */; };
 		0431E7491E5731DF0064846A /* DAYPBL__.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0431E7431E5731DF0064846A /* DAYPBL__.ttf */; };
 		0431E74A1E5731DF0064846A /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0431E7441E5731DF0064846A /* GameViewController.swift */; };
-		0431E74B1E5731DF0064846A /* CSwift-Bridging-Header.m in Sources */ = {isa = PBXBuildFile; fileRef = 0431E7451E5731DF0064846A /* CSwift-Bridging-Header.m */; };
 		0431E7541E5732320064846A /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0431E74C1E5732320064846A /* GameScene.swift */; };
 		0431E7551E5732320064846A /* MainMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0431E74D1E5732320064846A /* MainMenu.swift */; };
 		0431E7561E5732320064846A /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 0431E74E1E5732320064846A /* GameScene.sks */; };
 		0431E7571E5732320064846A /* ShopScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 0431E74F1E5732320064846A /* ShopScene.sks */; };
-		0431E7581E5732320064846A /* howToPlayScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0431E7501E5732320064846A /* howToPlayScene.swift */; };
 		0431E7591E5732320064846A /* SettingsScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0431E7511E5732320064846A /* SettingsScene.swift */; };
 		0431E75A1E5732320064846A /* GameOver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0431E7521E5732320064846A /* GameOver.swift */; };
 		0431E75B1E5732320064846A /* ShopScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0431E7531E5732320064846A /* ShopScene.swift */; };
@@ -41,7 +39,12 @@
 		0431E77A1E5732E20064846A /* BarrierBreak.sks in Resources */ = {isa = PBXBuildFile; fileRef = 0431E7771E5732E20064846A /* BarrierBreak.sks */; };
 		0431E77B1E5732E20064846A /* BallTrail.sks in Resources */ = {isa = PBXBuildFile; fileRef = 0431E7781E5732E20064846A /* BallTrail.sks */; };
 		0431E77C1E5732E20064846A /* GameOver.sks in Resources */ = {isa = PBXBuildFile; fileRef = 0431E7791E5732E20064846A /* GameOver.sks */; };
-		0431E77F1E57331B0064846A /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0431E77E1E57331B0064846A /* Info.plist */; };
+		0431E7821E5737130064846A /* Chartboost.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0431E7811E5737130064846A /* Chartboost.framework */; };
+		0431E7841E573C620064846A /* CSwift-Bridging-Header.m in Sources */ = {isa = PBXBuildFile; fileRef = 0431E7831E573C620064846A /* CSwift-Bridging-Header.m */; };
+		0431E7861E573CA20064846A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0431E7851E573CA20064846A /* CoreGraphics.framework */; };
+		0431E7881E573CB80064846A /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0431E7871E573CB80064846A /* GameKit.framework */; };
+		0431E78A1E573CD00064846A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0431E7891E573CD00064846A /* Foundation.framework */; };
+		0431E78C1E573CD80064846A /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0431E78B1E573CD80064846A /* AVFoundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,17 +55,14 @@
 		0431E73A1E57315A0064846A /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		0431E73C1E57316A0064846A /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
 		0431E73E1E5731B10064846A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		0431E7401E5731DE0064846A /* Circle Of Chance 2-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Circle Of Chance 2-Bridging-Header.h"; sourceTree = "<group>"; };
 		0431E7411E5731DF0064846A /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0431E7421E5731DF0064846A /* GrandHotel-Regular.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GrandHotel-Regular.otf"; sourceTree = "<group>"; };
 		0431E7431E5731DF0064846A /* DAYPBL__.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = DAYPBL__.ttf; sourceTree = "<group>"; };
 		0431E7441E5731DF0064846A /* GameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
-		0431E7451E5731DF0064846A /* CSwift-Bridging-Header.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CSwift-Bridging-Header.m"; sourceTree = "<group>"; };
 		0431E74C1E5732320064846A /* GameScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		0431E74D1E5732320064846A /* MainMenu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainMenu.swift; sourceTree = "<group>"; };
 		0431E74E1E5732320064846A /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
 		0431E74F1E5732320064846A /* ShopScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = ShopScene.sks; sourceTree = "<group>"; };
-		0431E7501E5732320064846A /* howToPlayScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = howToPlayScene.swift; sourceTree = "<group>"; };
 		0431E7511E5732320064846A /* SettingsScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsScene.swift; sourceTree = "<group>"; };
 		0431E7521E5732320064846A /* GameOver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameOver.swift; sourceTree = "<group>"; };
 		0431E7531E5732320064846A /* ShopScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShopScene.swift; sourceTree = "<group>"; };
@@ -82,6 +82,13 @@
 		0431E7781E5732E20064846A /* BallTrail.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = BallTrail.sks; sourceTree = "<group>"; };
 		0431E7791E5732E20064846A /* GameOver.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameOver.sks; sourceTree = "<group>"; };
 		0431E77E1E57331B0064846A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0431E7801E5736A20064846A /* Circle Of Chance 2-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Circle Of Chance 2-Bridging-Header.h"; sourceTree = "<group>"; };
+		0431E7811E5737130064846A /* Chartboost.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Chartboost.framework; sourceTree = "<group>"; };
+		0431E7831E573C620064846A /* CSwift-Bridging-Header.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CSwift-Bridging-Header.m"; sourceTree = "<group>"; };
+		0431E7851E573CA20064846A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		0431E7871E573CB80064846A /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = System/Library/Frameworks/GameKit.framework; sourceTree = SDKROOT; };
+		0431E7891E573CD00064846A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		0431E78B1E573CD80064846A /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,7 +96,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0431E78C1E573CD80064846A /* AVFoundation.framework in Frameworks */,
+				0431E78A1E573CD00064846A /* Foundation.framework in Frameworks */,
+				0431E7881E573CB80064846A /* GameKit.framework in Frameworks */,
+				0431E7861E573CA20064846A /* CoreGraphics.framework in Frameworks */,
 				0431E73D1E57316A0064846A /* AdSupport.framework in Frameworks */,
+				0431E7821E5737130064846A /* Chartboost.framework in Frameworks */,
 				0431E73B1E57315A0064846A /* QuartzCore.framework in Frameworks */,
 				0431E7391E5731530064846A /* StoreKit.framework in Frameworks */,
 			);
@@ -101,6 +113,7 @@
 		0431E7131E56E5540064846A = {
 			isa = PBXGroup;
 			children = (
+				0431E7811E5737130064846A /* Chartboost.framework */,
 				0431E71E1E56E5540064846A /* Circle Of Chance 2 */,
 				0431E71D1E56E5540064846A /* Products */,
 				0431E7371E5731530064846A /* Frameworks */,
@@ -126,12 +139,12 @@
 				0431E7651E5732810064846A /* Extensios/Constants */,
 				0431E77D1E5732EC0064846A /* Particles/Sounds */,
 				0431E7441E5731DF0064846A /* GameViewController.swift */,
-				0431E7451E5731DF0064846A /* CSwift-Bridging-Header.m */,
 				0431E7291E56E5540064846A /* Main.storyboard */,
 				0431E72E1E56E5540064846A /* LaunchScreen.storyboard */,
 				0431E73E1E5731B10064846A /* Assets.xcassets */,
+				0431E7831E573C620064846A /* CSwift-Bridging-Header.m */,
+				0431E7801E5736A20064846A /* Circle Of Chance 2-Bridging-Header.h */,
 				0431E77E1E57331B0064846A /* Info.plist */,
-				0431E7401E5731DE0064846A /* Circle Of Chance 2-Bridging-Header.h */,
 			);
 			path = "Circle Of Chance 2";
 			sourceTree = "<group>";
@@ -139,6 +152,10 @@
 		0431E7371E5731530064846A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				0431E78B1E573CD80064846A /* AVFoundation.framework */,
+				0431E7891E573CD00064846A /* Foundation.framework */,
+				0431E7871E573CB80064846A /* GameKit.framework */,
+				0431E7851E573CA20064846A /* CoreGraphics.framework */,
 				0431E73C1E57316A0064846A /* AdSupport.framework */,
 				0431E73A1E57315A0064846A /* QuartzCore.framework */,
 				0431E7381E5731530064846A /* StoreKit.framework */,
@@ -153,7 +170,6 @@
 				0431E74D1E5732320064846A /* MainMenu.swift */,
 				0431E74E1E5732320064846A /* GameScene.sks */,
 				0431E74F1E5732320064846A /* ShopScene.sks */,
-				0431E7501E5732320064846A /* howToPlayScene.swift */,
 				0431E7511E5732320064846A /* SettingsScene.swift */,
 				0431E7521E5732320064846A /* GameOver.swift */,
 				0431E7531E5732320064846A /* ShopScene.swift */,
@@ -266,7 +282,6 @@
 				0431E77C1E5732E20064846A /* GameOver.sks in Resources */,
 				0431E73F1E5731B10064846A /* Assets.xcassets in Resources */,
 				0431E7301E56E5540064846A /* LaunchScreen.storyboard in Resources */,
-				0431E77F1E57331B0064846A /* Info.plist in Resources */,
 				0431E7561E5732320064846A /* GameScene.sks in Resources */,
 				0431E7491E5731DF0064846A /* DAYPBL__.ttf in Resources */,
 			);
@@ -280,7 +295,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				0431E7741E5732A30064846A /* itemContainer.swift in Sources */,
-				0431E7581E5732320064846A /* howToPlayScene.swift in Sources */,
 				0431E7591E5732320064846A /* SettingsScene.swift in Sources */,
 				0431E7701E5732A30064846A /* KBBarriers.swift in Sources */,
 				0431E7751E5732A30064846A /* Item.swift in Sources */,
@@ -288,11 +302,11 @@
 				0431E75B1E5732320064846A /* ShopScene.swift in Sources */,
 				0431E74A1E5731DF0064846A /* GameViewController.swift in Sources */,
 				0431E7471E5731DF0064846A /* AppDelegate.swift in Sources */,
+				0431E7841E573C620064846A /* CSwift-Bridging-Header.m in Sources */,
 				0431E76E1E5732A30064846A /* KBCards.swift in Sources */,
 				0431E7541E5732320064846A /* GameScene.swift in Sources */,
 				0431E7731E5732A30064846A /* Items.swift in Sources */,
 				0431E76F1E5732A30064846A /* KBCharacter.swift in Sources */,
-				0431E74B1E5731DF0064846A /* CSwift-Bridging-Header.m in Sources */,
 				0431E7611E5732680064846A /* IAPHelper.swift in Sources */,
 				0431E7621E5732680064846A /* AudioManager.swift in Sources */,
 				0431E75A1E5732320064846A /* GameOver.swift in Sources */,
@@ -423,8 +437,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEVELOPMENT_TEAM = VE747AB6CH;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "Circle Of Chance 2/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.KJBApps.CircleOfChance2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -439,8 +459,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				DEVELOPMENT_TEAM = VE747AB6CH;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "Circle Of Chance 2/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.KJBApps.CircleOfChance2;
 				PRODUCT_NAME = "$(TARGET_NAME)";

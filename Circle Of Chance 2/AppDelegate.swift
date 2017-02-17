@@ -15,8 +15,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+        Chartboost.start(withAppId: "58a7043004b01602886f7b17", appSignature: "7b508d0500b11e326b461176b0c8f45db868480f", delegate: nil)
         // Override point for customization after application launch.
-        Chartboost.start(withAppId: "576b6a5f43150f58d76305f3", appSignature: "f36cda0da48dd568ebd6fa19cc5e132d5a2f558b", delegate: nil)
         return true
     }
 

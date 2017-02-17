@@ -9,14 +9,14 @@ provides-dynamic-lookup:
 - "shopItem"
 depends-top-level:
 - "item"
-- !private "UIColor"
 - "SKSpriteNode"
-- !private "StringLiteralType"
 - !private "fatalError"
-- !private "SKTexture"
-- "itemContainer"
-- "AssignmentPrecedence"
 - "NSCoder"
+- "AssignmentPrecedence"
+- !private "UIColor"
+- "itemContainer"
+- !private "StringLiteralType"
+- !private "SKTexture"
 depends-member:
 - !private ["Ps9AnyObject", "SKTexture"]
 - !private ["Ps9AnyObject", "UIColor"]
@@ -286,6 +286,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Users/mac/Desktop/Circle Of Chance 2/Chartboost.framework/Headers/Chartboost.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.2.sdk/usr/include/CommonCrypto/CommonDigest.h"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SpriteKit.swiftmodule"

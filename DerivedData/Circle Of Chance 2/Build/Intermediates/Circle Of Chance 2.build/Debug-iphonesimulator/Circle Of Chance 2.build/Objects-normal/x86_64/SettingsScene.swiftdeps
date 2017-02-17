@@ -6,60 +6,60 @@ provides-nominal:
 provides-member:
 - ["C18Circle_Of_Chance_213SettingsScene", ""]
 provides-dynamic-lookup:
-- "addButtons"
-- "musicContainer"
-- "animateEnter"
-- "musicIcon"
-- "settingsText"
-- "addBackground"
-- "restorePurchases"
-- "didMove"
-- "store"
-- "buttonLayer"
-- "settingsBar"
-- "loadview"
-- "topBarLayer"
-- "touchesEnded"
-- "soundContainer"
-- "changeMusic"
-- "backButton"
 - "restorePurchasesText"
+- "restorePurchases"
+- "buttonLayer"
+- "soundContainer"
+- "musicContainer"
+- "addBackground"
+- "settingsText"
+- "settingsBar"
+- "store"
+- "backButton"
+- "animateEnter"
+- "addButtons"
+- "musicIcon"
+- "loadview"
+- "touchesEnded"
+- "didMove"
+- "changeMusic"
 - "animateExit"
-- "volumeIcon"
+- "topBarLayer"
 - "productID"
+- "volumeIcon"
 depends-top-level:
-- !private "BooleanLiteralType"
-- "SettingsScene"
-- "UIEvent"
-- !private "AudioManager"
-- "SKScene"
+- "SKLabelNode"
+- !private "MainMenu"
+- "AssignmentPrecedence"
 - "IAPHelper"
-- !private "+"
-- "Set"
-- !private "/"
-- !private "SKTexture"
-- "StringLiteralType"
-- !private "-"
-- !private "NSNotification"
-- !private "CGPoint"
+- "CastingPrecedence"
+- !private "=="
+- !private "UIColor"
 - !private "SKColor"
+- "SKNode"
+- "NSSet"
+- !private "/"
+- !private "SKAction"
+- !private "NSNotification"
+- !private "-"
+- !private "layerPositions"
+- "SettingsScene"
 - !private "CGVector"
 - "SKSpriteNode"
-- "CastingPrecedence"
+- !private "SKTexture"
 - "UITouch"
-- "SKView"
-- !private "ProductIdentifier"
-- "AssignmentPrecedence"
-- !private "=="
-- !private "layerPositions"
-- "NSSet"
-- !private "UIColor"
-- "SKNode"
 - !private "NotificationCenter"
-- "SKLabelNode"
-- !private "SKAction"
+- !private "AudioManager"
+- "SKScene"
+- !private "BooleanLiteralType"
+- !private "CGPoint"
+- "UIEvent"
+- "Set"
+- "StringLiteralType"
+- "SKView"
+- !private "+"
+- !private "ProductIdentifier"
 - !private "ShopScene"
-- !private "MainMenu"
 depends-member:
 - !private ["Ps16AbsoluteValuable", "Stride"]
 - !private ["Ps9AnyObject", "AudioManager"]
@@ -126,8 +126,6 @@ depends-member:
 - ["Ps9AnyObject", "settingsBar"]
 - ["Ps9AnyObject", "settingsText"]
 - !private ["Ps9AnyObject", "sharedInstance"]
-- !private ["Ps9AnyObject", "showsFPS"]
-- !private ["Ps9AnyObject", "showsNodeCount"]
 - !private ["Ps9AnyObject", "size"]
 - ["Ps9AnyObject", "soundContainer"]
 - ["Ps9AnyObject", "store"]
@@ -156,8 +154,6 @@ depends-member:
 - ["Sb", "deinit"]
 - !private ["PSo15CALayerDelegate", "ignoresSiblingOrder"]
 - !private ["PSo15CALayerDelegate", "presentScene"]
-- !private ["PSo15CALayerDelegate", "showsFPS"]
-- !private ["PSo15CALayerDelegate", "showsNodeCount"]
 - ["V12CoreGraphics7CGFloat", "deinit"]
 - ["VSC7CGPoint", "deinit"]
 - !private ["VSC7CGPoint", "init"]
@@ -229,8 +225,6 @@ depends-member:
 - !private ["Ps7CVarArg", "scaleMode"]
 - ["Ps7CVarArg", "settingsBar"]
 - ["Ps7CVarArg", "settingsText"]
-- !private ["Ps7CVarArg", "showsFPS"]
-- !private ["Ps7CVarArg", "showsNodeCount"]
 - !private ["Ps7CVarArg", "size"]
 - ["Ps7CVarArg", "soundContainer"]
 - ["Ps7CVarArg", "store"]
@@ -244,6 +238,7 @@ depends-member:
 - !private ["Ps7CVarArg", "white"]
 - !private ["Ps7CVarArg", "zPosition"]
 - ["Ps7CVarArg", ""]
+- !private ["PSo18ChartboostDelegate", "handlePurchaseNotification"]
 - !private ["Ps10Collection", "Iterator"]
 - !private ["Ps10Collection", "first"]
 - !private ["Ps10Comparable", "Stride"]
@@ -308,8 +303,6 @@ depends-member:
 - !private ["Ps28CustomDebugStringConvertible", "scaleMode"]
 - ["Ps28CustomDebugStringConvertible", "settingsBar"]
 - ["Ps28CustomDebugStringConvertible", "settingsText"]
-- !private ["Ps28CustomDebugStringConvertible", "showsFPS"]
-- !private ["Ps28CustomDebugStringConvertible", "showsNodeCount"]
 - !private ["Ps28CustomDebugStringConvertible", "size"]
 - ["Ps28CustomDebugStringConvertible", "soundContainer"]
 - ["Ps28CustomDebugStringConvertible", "store"]
@@ -408,8 +401,6 @@ depends-member:
 - !private ["Ps23CustomStringConvertible", "scaleMode"]
 - ["Ps23CustomStringConvertible", "settingsBar"]
 - ["Ps23CustomStringConvertible", "settingsText"]
-- !private ["Ps23CustomStringConvertible", "showsFPS"]
-- !private ["Ps23CustomStringConvertible", "showsNodeCount"]
 - !private ["Ps23CustomStringConvertible", "size"]
 - ["Ps23CustomStringConvertible", "soundContainer"]
 - ["Ps23CustomStringConvertible", "store"]
@@ -492,8 +483,6 @@ depends-member:
 - !private ["Ps9Equatable", "scaleMode"]
 - ["Ps9Equatable", "settingsBar"]
 - ["Ps9Equatable", "settingsText"]
-- !private ["Ps9Equatable", "showsFPS"]
-- !private ["Ps9Equatable", "showsNodeCount"]
 - !private ["Ps9Equatable", "size"]
 - ["Ps9Equatable", "soundContainer"]
 - ["Ps9Equatable", "store"]
@@ -639,8 +628,6 @@ depends-member:
 - !private ["Ps8Hashable", "scaleMode"]
 - ["Ps8Hashable", "settingsBar"]
 - ["Ps8Hashable", "settingsText"]
-- !private ["Ps8Hashable", "showsFPS"]
-- !private ["Ps8Hashable", "showsNodeCount"]
 - !private ["Ps8Hashable", "size"]
 - ["Ps8Hashable", "soundContainer"]
 - ["Ps8Hashable", "store"]
@@ -736,8 +723,6 @@ depends-member:
 - !private ["PSo8NSCoding", "scaleMode"]
 - ["PSo8NSCoding", "settingsBar"]
 - ["PSo8NSCoding", "settingsText"]
-- !private ["PSo8NSCoding", "showsFPS"]
-- !private ["PSo8NSCoding", "showsNodeCount"]
 - !private ["PSo8NSCoding", "size"]
 - ["PSo8NSCoding", "soundContainer"]
 - ["PSo8NSCoding", "store"]
@@ -878,8 +863,6 @@ depends-member:
 - !private ["CSo8NSObject", "scaleMode"]
 - ["CSo8NSObject", "settingsBar"]
 - ["CSo8NSObject", "settingsText"]
-- !private ["CSo8NSObject", "showsFPS"]
-- !private ["CSo8NSObject", "showsNodeCount"]
 - !private ["CSo8NSObject", "size"]
 - ["CSo8NSObject", "soundContainer"]
 - ["CSo8NSObject", "store"]
@@ -948,8 +931,6 @@ depends-member:
 - !private ["PSo16NSObjectProtocol", "scaleMode"]
 - ["PSo16NSObjectProtocol", "settingsBar"]
 - ["PSo16NSObjectProtocol", "settingsText"]
-- !private ["PSo16NSObjectProtocol", "showsFPS"]
-- !private ["PSo16NSObjectProtocol", "showsNodeCount"]
 - !private ["PSo16NSObjectProtocol", "size"]
 - ["PSo16NSObjectProtocol", "soundContainer"]
 - ["PSo16NSObjectProtocol", "store"]
@@ -1192,8 +1173,6 @@ depends-member:
 - ["CSo6SKView", "deinit"]
 - !private ["CSo6SKView", "ignoresSiblingOrder"]
 - !private ["CSo6SKView", "presentScene"]
-- !private ["CSo6SKView", "showsFPS"]
-- !private ["CSo6SKView", "showsNodeCount"]
 - !private ["PSo10SKWarpable", "AudioManager"]
 - !private ["PSo10SKWarpable", "CGPoint"]
 - !private ["PSo10SKWarpable", "CGVector"]
@@ -1318,27 +1297,17 @@ depends-member:
 - ["Ps20TextOutputStreamable", "init"]
 - !private ["PSo29UIAccessibilityIdentification", "ignoresSiblingOrder"]
 - !private ["PSo29UIAccessibilityIdentification", "presentScene"]
-- !private ["PSo29UIAccessibilityIdentification", "showsFPS"]
-- !private ["PSo29UIAccessibilityIdentification", "showsNodeCount"]
 - !private ["PSo12UIAppearance", "ignoresSiblingOrder"]
 - !private ["PSo12UIAppearance", "presentScene"]
-- !private ["PSo12UIAppearance", "showsFPS"]
-- !private ["PSo12UIAppearance", "showsNodeCount"]
 - !private ["PSo21UIAppearanceContainer", "ignoresSiblingOrder"]
 - !private ["PSo21UIAppearanceContainer", "presentScene"]
-- !private ["PSo21UIAppearanceContainer", "showsFPS"]
-- !private ["PSo21UIAppearanceContainer", "showsNodeCount"]
 - ["CSo7UIColor", "deinit"]
 - !private ["CSo7UIColor", "init"]
 - !private ["CSo7UIColor", "white"]
 - !private ["PSo17UICoordinateSpace", "ignoresSiblingOrder"]
 - !private ["PSo17UICoordinateSpace", "presentScene"]
-- !private ["PSo17UICoordinateSpace", "showsFPS"]
-- !private ["PSo17UICoordinateSpace", "showsNodeCount"]
 - !private ["PSo13UIDynamicItem", "ignoresSiblingOrder"]
 - !private ["PSo13UIDynamicItem", "presentScene"]
-- !private ["PSo13UIDynamicItem", "showsFPS"]
-- !private ["PSo13UIDynamicItem", "showsNodeCount"]
 - !private ["PSo18UIFocusEnvironment", "AudioManager"]
 - !private ["PSo18UIFocusEnvironment", "CGPoint"]
 - !private ["PSo18UIFocusEnvironment", "CGVector"]
@@ -1389,8 +1358,6 @@ depends-member:
 - !private ["PSo18UIFocusEnvironment", "scaleMode"]
 - ["PSo18UIFocusEnvironment", "settingsBar"]
 - ["PSo18UIFocusEnvironment", "settingsText"]
-- !private ["PSo18UIFocusEnvironment", "showsFPS"]
-- !private ["PSo18UIFocusEnvironment", "showsNodeCount"]
 - !private ["PSo18UIFocusEnvironment", "size"]
 - ["PSo18UIFocusEnvironment", "soundContainer"]
 - ["PSo18UIFocusEnvironment", "store"]
@@ -1452,8 +1419,6 @@ depends-member:
 - !private ["PSo11UIFocusItem", "scaleMode"]
 - ["PSo11UIFocusItem", "settingsBar"]
 - ["PSo11UIFocusItem", "settingsText"]
-- !private ["PSo11UIFocusItem", "showsFPS"]
-- !private ["PSo11UIFocusItem", "showsNodeCount"]
 - !private ["PSo11UIFocusItem", "size"]
 - ["PSo11UIFocusItem", "soundContainer"]
 - ["PSo11UIFocusItem", "store"]
@@ -1520,8 +1485,6 @@ depends-member:
 - !private ["CSo11UIResponder", "scaleMode"]
 - ["CSo11UIResponder", "settingsBar"]
 - ["CSo11UIResponder", "settingsText"]
-- !private ["CSo11UIResponder", "showsFPS"]
-- !private ["CSo11UIResponder", "showsNodeCount"]
 - !private ["CSo11UIResponder", "size"]
 - ["CSo11UIResponder", "soundContainer"]
 - ["CSo11UIResponder", "store"]
@@ -1582,8 +1545,6 @@ depends-member:
 - !private ["PSo30UIResponderStandardEditActions", "scaleMode"]
 - ["PSo30UIResponderStandardEditActions", "settingsBar"]
 - ["PSo30UIResponderStandardEditActions", "settingsText"]
-- !private ["PSo30UIResponderStandardEditActions", "showsFPS"]
-- !private ["PSo30UIResponderStandardEditActions", "showsNodeCount"]
 - !private ["PSo30UIResponderStandardEditActions", "size"]
 - ["PSo30UIResponderStandardEditActions", "soundContainer"]
 - ["PSo30UIResponderStandardEditActions", "store"]
@@ -1599,12 +1560,8 @@ depends-member:
 - !private ["CSo7UITouch", "location"]
 - !private ["PSo18UITraitEnvironment", "ignoresSiblingOrder"]
 - !private ["PSo18UITraitEnvironment", "presentScene"]
-- !private ["PSo18UITraitEnvironment", "showsFPS"]
-- !private ["PSo18UITraitEnvironment", "showsNodeCount"]
 - !private ["CSo6UIView", "ignoresSiblingOrder"]
 - !private ["CSo6UIView", "presentScene"]
-- !private ["CSo6UIView", "showsFPS"]
-- !private ["CSo6UIView", "showsNodeCount"]
 - !private ["Su", "deinit"]
 - !private ["Vs6UInt16", "deinit"]
 - !private ["Vs6UInt32", "deinit"]
@@ -1614,8 +1571,6 @@ depends-member:
 - !private ["Ps22_CVarArgPassedAsDouble", "Stride"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "ignoresSiblingOrder"]
 - !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "presentScene"]
-- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "showsFPS"]
-- !private ["Ps37_DefaultCustomPlaygroundQuickLookable", "showsNodeCount"]
 - !private ["Ps35_ExpressibleByBuiltinBooleanLiteral", "_getBuiltinLogicValue"]
 - ["Ps51_ExpressibleByBuiltinExtendedGraphemeClusterLiteral", "init"]
 - !private ["Ps33_ExpressibleByBuiltinFloatLiteral", "Stride"]
@@ -1692,8 +1647,6 @@ depends-member:
 - !private ["Ps9_Hashable", "scaleMode"]
 - ["Ps9_Hashable", "settingsBar"]
 - ["Ps9_Hashable", "settingsText"]
-- !private ["Ps9_Hashable", "showsFPS"]
-- !private ["Ps9_Hashable", "showsNodeCount"]
 - !private ["Ps9_Hashable", "size"]
 - ["Ps9_Hashable", "soundContainer"]
 - ["Ps9_Hashable", "store"]
@@ -1754,6 +1707,7 @@ depends-nominal:
 - "VSC6CGSize"
 - "VSC8CGVector"
 - "Ps7CVarArg"
+- !private "PSo18ChartboostDelegate"
 - !private "Ps10Collection"
 - "Ps10Comparable"
 - "Ps28CustomDebugStringConvertible"
@@ -1898,6 +1852,7 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Users/mac/Desktop/Circle Of Chance 2/Chartboost.framework/Headers/Chartboost.h"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator10.2.sdk/usr/include/CommonCrypto/CommonDigest.h"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
 - "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SpriteKit.swiftmodule"
