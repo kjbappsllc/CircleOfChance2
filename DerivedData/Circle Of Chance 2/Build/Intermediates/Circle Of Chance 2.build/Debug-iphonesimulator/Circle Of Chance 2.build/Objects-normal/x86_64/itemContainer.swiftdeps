@@ -8,15 +8,15 @@ provides-member:
 provides-dynamic-lookup:
 - "shopItem"
 depends-top-level:
+- !private "fatalError"
+- !private "SKTexture"
+- !private "UIColor"
+- !private "StringLiteralType"
 - "item"
 - "SKSpriteNode"
-- !private "fatalError"
-- "NSCoder"
 - "AssignmentPrecedence"
-- !private "UIColor"
 - "itemContainer"
-- !private "StringLiteralType"
-- !private "SKTexture"
+- "NSCoder"
 depends-member:
 - !private ["Ps9AnyObject", "SKTexture"]
 - !private ["Ps9AnyObject", "UIColor"]

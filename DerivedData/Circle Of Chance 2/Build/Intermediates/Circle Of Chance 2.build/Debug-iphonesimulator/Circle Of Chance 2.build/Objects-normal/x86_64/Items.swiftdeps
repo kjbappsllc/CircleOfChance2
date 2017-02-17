@@ -7,17 +7,17 @@ provides-member:
 - ["C18Circle_Of_Chance_25items", ""]
 provides-dynamic-lookup:
 depends-top-level:
-- "item"
-- !private "SKSpriteNode"
-- !private "Array"
-- !private "+="
 - "items"
 - !private "print"
-- !private "NSKeyedUnarchiver"
-- "CastingPrecedence"
 - !private "!"
-- "AssignmentPrecedence"
 - !private "NSKeyedArchiver"
+- !private "Array"
+- !private "SKSpriteNode"
+- "item"
+- !private "+="
+- "CastingPrecedence"
+- "AssignmentPrecedence"
+- !private "NSKeyedUnarchiver"
 depends-member:
 - !private ["Ps9AnyObject", "CurrentArchiveURL"]
 - !private ["Ps9AnyObject", "NSKeyedArchiver"]

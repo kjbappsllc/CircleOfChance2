@@ -6,14 +6,14 @@ provides-nominal:
 provides-member:
 - ["C18Circle_Of_Chance_215CurrencyManager", ""]
 provides-dynamic-lookup:
+- "coins"
 - "games"
 - "totalCoins"
-- "coins"
 depends-top-level:
-- "Int"
 - "NSObject"
-- !private "UserDefaults"
 - "CurrencyManager"
+- !private "UserDefaults"
+- "Int"
 - !private "StringLiteralType"
 depends-member:
 - !private ["Ps9AnyObject", "UserDefaults"]

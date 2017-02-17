@@ -6,24 +6,24 @@ provides-nominal:
 provides-member:
 - ["C18Circle_Of_Chance_211AppDelegate", ""]
 provides-dynamic-lookup:
-- "window"
 - "applicationDidEnterBackground"
 - "applicationWillTerminate"
 - "applicationWillResignActive"
-- "application"
+- "window"
 - "applicationDidBecomeActive"
+- "application"
 - "applicationWillEnterForeground"
 depends-top-level:
-- !private "BooleanLiteralType"
-- "AppDelegate"
-- "UIApplicationLaunchOptionsKey"
 - "UIApplication"
+- "AppDelegate"
 - "Bool"
 - !private "Chartboost"
 - "UIWindow"
-- !private "StringLiteralType"
-- "UIResponder"
+- !private "BooleanLiteralType"
 - "UIApplicationDelegate"
+- "UIResponder"
+- !private "StringLiteralType"
+- "UIApplicationLaunchOptionsKey"
 depends-member:
 - !private ["Ps9AnyObject", "Chartboost"]
 - ["Ps9AnyObject", "application"]

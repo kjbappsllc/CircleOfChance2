@@ -11,20 +11,20 @@ provides-member:
 provides-dynamic-lookup:
 depends-top-level:
 - "Effect"
-- !private "fatalError"
 - "NSCoder"
-- !private "-"
-- "Bool"
-- !private "StringLiteralType"
-- !private "Array"
-- "String"
-- "EffectType"
-- !private "~="
-- "=="
-- "AssignmentPrecedence"
+- !private "fatalError"
 - "Int"
+- !private "StringLiteralType"
+- "EffectType"
+- "=="
+- !private "Array"
+- !private "~="
+- "Bool"
 - "IntegerLiteralType"
+- "String"
+- "AssignmentPrecedence"
 - "FloatLiteralType"
+- !private "-"
 depends-member:
 - !private ["Ps9AnyObject", "effectType"]
 - !private ["Ps9AnyObject", "fatalError"]

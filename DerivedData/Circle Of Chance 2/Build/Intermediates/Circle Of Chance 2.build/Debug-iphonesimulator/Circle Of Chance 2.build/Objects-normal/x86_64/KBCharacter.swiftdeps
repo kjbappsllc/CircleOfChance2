@@ -7,24 +7,24 @@ provides-member:
 - ["C18Circle_Of_Chance_29Character", ""]
 provides-dynamic-lookup:
 depends-top-level:
+- !private "StringLiteralType"
+- !private "+="
 - "CGSize"
-- "AssignmentPrecedence"
+- "Character"
+- !private "fatalError"
+- !private "redBarrierCategory"
+- !private "|"
+- !private "BooleanLiteralType"
 - "NSCoder"
 - "SKPhysicsBody"
-- "Character"
-- !private "redBarrierCategory"
 - !private "FloatLiteralType"
+- !private "ballCategory"
 - !private "IntegerLiteralType"
 - "CGFloat"
-- !private "+="
-- !private "ballCategory"
-- !private "/"
-- !private "BooleanLiteralType"
 - !private "-"
-- !private "StringLiteralType"
-- !private "fatalError"
-- !private "|"
+- "AssignmentPrecedence"
 - !private "dotCategory"
+- !private "/"
 depends-member:
 - ["Ps16AbsoluteValuable", "init"]
 - ["Ps9AnyObject", "CGFloat"]
