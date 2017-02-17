@@ -349,7 +349,7 @@ class ShopScene: SKScene, ChartboostDelegate {
                 shopItems.current = touchedItem.shopItem
             }
             else {
-                if touchedItem.shopItem.price < currency.coins {
+                if touchedItem.shopItem.price <= currency.coins {
                     unlockedItems.append(touchedItem.shopItem)
                     shopItems.unlocked = unlockedItems
                     shopItems.saveItems()
