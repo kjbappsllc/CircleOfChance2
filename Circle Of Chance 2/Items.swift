@@ -75,8 +75,10 @@ class items {
         let skin1 = item(item: .skin, sprite: SKSpriteNode(imageNamed: "ball"), name: "BLUE", price: 0)
         let skin2 = item(item: .skin, sprite: SKSpriteNode(imageNamed: "redBall"), name: "RED", price: 100)
         let skin3 = item(item: .skin, sprite: SKSpriteNode(imageNamed: "purple"), name: "PURPLE", price: 100)
-        let skin4 = item(item: .skin, sprite: SKSpriteNode(imageNamed: "spottedBall"), name: "SPOTS", price: 300)
-        skinsArray += [skin1,skin2,skin3,skin4]
+        let skin4 = item(item: .skin, sprite: SKSpriteNode(imageNamed: "Dotball"), name: "CROSSHAIR", price: 300)
+        let skin5 = item(item: .skin, sprite: SKSpriteNode(imageNamed: "basketball"), name: "BASKETBALL", price: 500)
+        
+        skinsArray += [skin1,skin2,skin3,skin4,skin5]
         return skinsArray
         
     }

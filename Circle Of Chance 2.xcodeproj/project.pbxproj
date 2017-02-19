@@ -37,7 +37,6 @@
 		0431E7741E5732A30064846A /* itemContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0431E76C1E5732A30064846A /* itemContainer.swift */; };
 		0431E7751E5732A30064846A /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0431E76D1E5732A30064846A /* Item.swift */; };
 		0431E77A1E5732E20064846A /* BarrierBreak.sks in Resources */ = {isa = PBXBuildFile; fileRef = 0431E7771E5732E20064846A /* BarrierBreak.sks */; };
-		0431E77B1E5732E20064846A /* BallTrail.sks in Resources */ = {isa = PBXBuildFile; fileRef = 0431E7781E5732E20064846A /* BallTrail.sks */; };
 		0431E77C1E5732E20064846A /* GameOver.sks in Resources */ = {isa = PBXBuildFile; fileRef = 0431E7791E5732E20064846A /* GameOver.sks */; };
 		0431E7821E5737130064846A /* Chartboost.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0431E7811E5737130064846A /* Chartboost.framework */; };
 		0431E7841E573C620064846A /* CSwift-Bridging-Header.m in Sources */ = {isa = PBXBuildFile; fileRef = 0431E7831E573C620064846A /* CSwift-Bridging-Header.m */; };
@@ -80,7 +79,6 @@
 		0431E76C1E5732A30064846A /* itemContainer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = itemContainer.swift; sourceTree = "<group>"; };
 		0431E76D1E5732A30064846A /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		0431E7771E5732E20064846A /* BarrierBreak.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = BarrierBreak.sks; sourceTree = "<group>"; };
-		0431E7781E5732E20064846A /* BallTrail.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = BallTrail.sks; sourceTree = "<group>"; };
 		0431E7791E5732E20064846A /* GameOver.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameOver.sks; sourceTree = "<group>"; };
 		0431E77E1E57331B0064846A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0431E7801E5736A20064846A /* Circle Of Chance 2-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Circle Of Chance 2-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -211,7 +209,6 @@
 			isa = PBXGroup;
 			children = (
 				0431E7771E5732E20064846A /* BarrierBreak.sks */,
-				0431E7781E5732E20064846A /* BallTrail.sks */,
 				0431E7791E5732E20064846A /* GameOver.sks */,
 			);
 			name = Particles/Sounds;
@@ -281,7 +278,6 @@
 				0431E7481E5731DF0064846A /* GrandHotel-Regular.otf in Resources */,
 				0431E7571E5732320064846A /* ShopScene.sks in Resources */,
 				0431E72B1E56E5540064846A /* Main.storyboard in Resources */,
-				0431E77B1E5732E20064846A /* BallTrail.sks in Resources */,
 				0431E77A1E5732E20064846A /* BarrierBreak.sks in Resources */,
 				0431E77C1E5732E20064846A /* GameOver.sks in Resources */,
 				0431E73F1E5731B10064846A /* Assets.xcassets in Resources */,

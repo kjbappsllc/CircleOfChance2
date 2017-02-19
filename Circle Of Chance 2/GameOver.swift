@@ -45,6 +45,7 @@ class GameOver: SKScene, ChartboostDelegate {
         loadView()
         
         if Chartboost.hasRewardedVideo(CBLocationGameOver) == false {
+            print("caching")
             Chartboost.cacheRewardedVideo(CBLocationGameOver)
             let scale = SKAction.scale(to: 1.05, duration: 1.0)
             let scaleback = SKAction.scale(to: 1.0, duration: 1.0)
@@ -278,7 +279,9 @@ class GameOver: SKScene, ChartboostDelegate {
             }
             
             if movieButton.contains(touchLocation) && movieButton.alpha != 1 {
+                print("hmm.....")
                 if Chartboost.hasRewardedVideo(CBLocationGameOver) {
+                    print("works")
                     Chartboost.showRewardedVideo(CBLocationGameOver)
                 }
                 movieButton.alpha = 1

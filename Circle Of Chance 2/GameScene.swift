@@ -89,7 +89,6 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     var gameCenterAchievements = [String:GKAchievement]()
     
     override func didMove(to view: SKView) {
-        
         anchorPoint = CGPoint(x: 0.5, y: 0.5)
         addChild(gameLayer)
         addChild(hudLayer)
@@ -1005,9 +1004,11 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
                 move.timingMode = .easeIn
                 ball.run(move, completion: {
                     SKAction.wait(forDuration: 0.3)
+
                     self.moveCounterClockWise()
                     self.gameStarted = true
                     self.scene?.isUserInteractionEnabled = true
+                    
                 })
             }
             else {
