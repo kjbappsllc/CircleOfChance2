@@ -25,7 +25,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     
     //Gameplay
     fileprivate var gamePlayArea = SKSpriteNode()
-    fileprivate var ballChar = Character()
+    fileprivate var ballData = Character()
     fileprivate var ball = SKSpriteNode()
     var shopSkin = items()
     fileprivate var star = StarIcon()
@@ -461,8 +461,11 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     //Mark: This Function adds the ball onto the area
     func addBall(_ completion: @escaping () -> ()) {
         ball = shopSkin.current.sprite
-        ball.physicsBody = ballChar.loadPhysics()
-        ball.size = ballChar.size
+        ballData.setSkinOrientation(name: shopSkin.current.name)
+        
+        ball.zRotation = ballData.rotation
+        ball.physicsBody = ballData.loadPhysics()
+        ball.size = ballData.size
         ball.position = CGPoint(x: -40, y: 45)
         ball.zPosition = layerPositions.character.rawValue
         ball.isHidden = false
@@ -487,7 +490,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         let rad = atan2(dy,dx)
         Path = UIBezierPath(arcCenter: CGPoint(x: 0, y: 45), radius: 165, startAngle: rad, endAngle: rad+CGFloat(M_PI*4), clockwise: true)
         
-        let follow = SKAction.follow(Path.cgPath, asOffset: false, orientToPath: false, speed: ballChar.getballSpeedCounterClockWise())
+        let follow = SKAction.follow(Path.cgPath, asOffset: false, orientToPath: ballData.orient, speed: ballData.getballSpeedCounterClockWise())
         ball.run(SKAction.repeatForever(follow))
         
     }
@@ -500,7 +503,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
         let rad = atan2(dy,dx)
         Path = UIBezierPath(arcCenter: CGPoint(x: 0, y: 45), radius: 165, startAngle: rad, endAngle: rad+CGFloat(M_PI*4), clockwise: true)
         
-        let follow = SKAction.follow(Path.cgPath, asOffset: false, orientToPath: false, speed: ballChar.getballSpeedClockWise())
+        let follow = SKAction.follow(Path.cgPath, asOffset: false, orientToPath: ballData.orient, speed: ballData.getballSpeedClockWise())
         ball.run(SKAction.repeatForever(follow).reversed())
     }
     
@@ -571,9 +574,9 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
             
             
             //Checks to see whether or not to add more speed to the ball based on whether the effect "Motion" is up
-            if ballChar.getballSpeedClockWise() < 350 && motionEffect.isActive == false{
-                ballChar.AddBallSpeedClockWise(3)
-                ballChar.AddBallSpeedCounterClockWise(3)
+            if ballData.getballSpeedClockWise() < 350 && motionEffect.isActive == false{
+                ballData.AddBallSpeedClockWise(3)
+                ballData.AddBallSpeedCounterClockWise(3)
             }
             
             //Adds the new level in the beginning of every other level the level
@@ -927,8 +930,8 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
     
     //An effect that changes the motion of the ball
     func IrregularMotion() {
-        ballChar.SetBallSpeedClockWise(350)
-        ballChar.SetBallSpeedCounterClockWise(130)
+        ballData.SetBallSpeedClockWise(350)
+        ballData.SetBallSpeedCounterClockWise(130)
     }
     
     //An effect that changes the size of the ball
@@ -999,7 +1002,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
             self.scene?.isUserInteractionEnabled = false
             
             if ball.position.x > gamePlayArea.position.x {
-                ball.removeAllActions()
+                ball.removeAction(forKey: "moveAction")
                 let move = SKAction.move(by: CGVector(dx: CONSTANTRADIUS - ball.position.x, dy: 0), duration: 0.4)
                 move.timingMode = .easeIn
                 ball.run(move, completion: {
@@ -1012,7 +1015,7 @@ class GameScene: SKScene, SKPhysicsContactDelegate {
                 })
             }
             else {
-                ball.removeAllActions()
+                ball.removeAction(forKey: "moveAction")
                 let move = SKAction.move(by: CGVector(dx: -CONSTANTRADIUS - ball.position.x, dy: 0), duration: 0.4)
                 move.timingMode = .easeIn
                 ball.run(move, completion: {

@@ -45,6 +45,9 @@
 		0431E78A1E573CD00064846A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0431E7891E573CD00064846A /* Foundation.framework */; };
 		0431E78C1E573CD80064846A /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0431E78B1E573CD80064846A /* AVFoundation.framework */; };
 		0431E78E1E5747190064846A /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0431E78D1E5747190064846A /* GoogleMobileAds.framework */; };
+		04FE97FB1E5C991100CC4328 /* SpecialNodes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04FE97FA1E5C991100CC4328 /* SpecialNodes.swift */; };
+		04FE97FF1E5F055D00CC4328 /* chomp.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 04FE97FE1E5F055D00CC4328 /* chomp.atlas */; };
+		04FE98031E5F0D1900CC4328 /* flux.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 04FE98021E5F0D1900CC4328 /* flux.atlas */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -89,6 +92,9 @@
 		0431E7891E573CD00064846A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		0431E78B1E573CD80064846A /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		0431E78D1E5747190064846A /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMobileAds.framework; sourceTree = "<group>"; };
+		04FE97FA1E5C991100CC4328 /* SpecialNodes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpecialNodes.swift; sourceTree = "<group>"; };
+		04FE97FE1E5F055D00CC4328 /* chomp.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = chomp.atlas; sourceTree = "<group>"; };
+		04FE98021E5F0D1900CC4328 /* flux.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = flux.atlas; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +150,8 @@
 				0431E7291E56E5540064846A /* Main.storyboard */,
 				0431E72E1E56E5540064846A /* LaunchScreen.storyboard */,
 				0431E73E1E5731B10064846A /* Assets.xcassets */,
+				04FE98021E5F0D1900CC4328 /* flux.atlas */,
+				04FE97FE1E5F055D00CC4328 /* chomp.atlas */,
 				0431E7831E573C620064846A /* CSwift-Bridging-Header.m */,
 				0431E7801E5736A20064846A /* Circle Of Chance 2-Bridging-Header.h */,
 				0431E77E1E57331B0064846A /* Info.plist */,
@@ -196,6 +204,7 @@
 				0431E7661E5732A30064846A /* KBCards.swift */,
 				0431E7671E5732A30064846A /* KBCharacter.swift */,
 				0431E7681E5732A30064846A /* KBBarriers.swift */,
+				04FE97FA1E5C991100CC4328 /* SpecialNodes.swift */,
 				0431E7691E5732A30064846A /* CurrencyManager.swift */,
 				0431E76A1E5732A30064846A /* KBStarIcon.swift */,
 				0431E76B1E5732A30064846A /* Items.swift */,
@@ -281,9 +290,11 @@
 				0431E77A1E5732E20064846A /* BarrierBreak.sks in Resources */,
 				0431E77C1E5732E20064846A /* GameOver.sks in Resources */,
 				0431E73F1E5731B10064846A /* Assets.xcassets in Resources */,
+				04FE98031E5F0D1900CC4328 /* flux.atlas in Resources */,
 				0431E7301E56E5540064846A /* LaunchScreen.storyboard in Resources */,
 				0431E7561E5732320064846A /* GameScene.sks in Resources */,
 				0431E7491E5731DF0064846A /* DAYPBL__.ttf in Resources */,
+				04FE97FF1E5F055D00CC4328 /* chomp.atlas in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -294,6 +305,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				04FE97FB1E5C991100CC4328 /* SpecialNodes.swift in Sources */,
 				0431E7741E5732A30064846A /* itemContainer.swift in Sources */,
 				0431E7591E5732320064846A /* SettingsScene.swift in Sources */,
 				0431E7701E5732A30064846A /* KBBarriers.swift in Sources */,

@@ -12,6 +12,8 @@ import SpriteKit
 class Character {
     var ballSpeedClockWise = CGFloat()
     var ballSpeedCounterClockWise = CGFloat()
+    var rotation: CGFloat
+    var orient: Bool
     fileprivate var _size: CGSize
     var size: CGSize {
         get{
@@ -23,6 +25,8 @@ class Character {
     }
     
     init() {
+        orient = false
+        rotation = 0
         ballSpeedClockWise = 195.0
         ballSpeedCounterClockWise = 195.0
         _size = CGSize(width: 55, height: 55)
@@ -64,6 +68,17 @@ class Character {
         physicsBody.collisionBitMask = redBarrierCategory
         physicsBody.affectedByGravity = false
         return physicsBody
+    }
+    
+    func setSkinOrientation(name: String) {
+        switch name {
+            
+        case "CHOMP":
+            orient = true
+            
+        default:
+            break
+        }
     }
     
 }

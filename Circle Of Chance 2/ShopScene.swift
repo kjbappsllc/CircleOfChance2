@@ -127,7 +127,7 @@ class ShopScene: SKScene, ChartboostDelegate {
             //position the name
             let name = SKLabelNode()
             name.text = item.shopItem.name
-            setUpLabel(name, size: 26, fontName: "Lucida Grande", fontColor: SKColor.init(colorLiteralRed: 176/255, green: 83/255, blue: 245/255, alpha: 1.0))
+            setUpLabel(name, size: 26, fontName: "Arial", fontColor: SKColor.init(colorLiteralRed: 176/255, green: 83/255, blue: 245/255, alpha: 1.0))
             name.position.y = -20
             name.zPosition = 10
             item.addChild(name)
@@ -137,7 +137,7 @@ class ShopScene: SKScene, ChartboostDelegate {
             if !unlockedItems.contains(where: {$0.name == nodes[i].name}){
                 let price = SKLabelNode()
                 price.text = "\(nodes[i].price)"
-                setUpLabel(price, size: 36.0, fontName: "Lucida Grande-Bold", fontColor: SKColor.black)
+                setUpLabel(price, size: 36.0, fontName: "Arial", fontColor: SKColor.black)
                 price.position.y = -item.size.height/2 + 70
                 price.zPosition = 10
                 price.name = "price"

@@ -74,11 +74,13 @@ class items {
         var skinsArray = [item]()
         let skin1 = item(item: .skin, sprite: SKSpriteNode(imageNamed: "ball"), name: "BLUE", price: 0)
         let skin2 = item(item: .skin, sprite: SKSpriteNode(imageNamed: "redBall"), name: "RED", price: 100)
-        let skin3 = item(item: .skin, sprite: SKSpriteNode(imageNamed: "purple"), name: "PURPLE", price: 100)
-        let skin4 = item(item: .skin, sprite: SKSpriteNode(imageNamed: "Dotball"), name: "CROSSHAIR", price: 300)
-        let skin5 = item(item: .skin, sprite: SKSpriteNode(imageNamed: "basketball"), name: "BASKETBALL", price: 500)
+        let skin3 = item(item: .skin, sprite: SKSpriteNode(imageNamed: "purple"), name: "PURPLE", price: 300)
+        let skin4 = item(item: .skin, sprite: SKSpriteNode(imageNamed: "Dotball"), name: "CROSSHAIR", price: 500)
+        let skin5 = item(item: .skin, sprite: SKSpriteNode(imageNamed: "basketball"), name: "BASKETBALL", price: 2000)
+        let skin6 = item(item: .skin, sprite: SpecialNodes(Begintexture: SKTexture(imageNamed: "flux1"), textAtlas: SKTextureAtlas(named: "flux"), uniformName: "flux") , name: "FLUX", price: 1500)
+        let skin7 = item(item: .skin, sprite: SpecialNodes(Begintexture: SKTexture(imageNamed: "chomp1"), textAtlas: SKTextureAtlas(named: "chomp") , uniformName: "chomp") , name: "CHOMP", price: 2000)
         
-        skinsArray += [skin1,skin2,skin3,skin4,skin5]
+        skinsArray += [skin1,skin2,skin3,skin4,skin5,skin6,skin7]
         return skinsArray
         
     }
